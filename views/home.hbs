@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEB700</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/theme.css">
+	</head>
+<style>
+	body {
+		background-color: azure;
+	}
+</style>
+	<body>
+	
+		<p></p>
+		<p> Welcome to my website, I will be demonstrating HTML5 principles
+			and techniques, Routing in Express </p>
+		<h1>Content</h1>
+		<p>This site consists of 3 static views (<a href="/">Home</a>, <a href="/about">About</a>, <a href="/htmlDemo">HTML Demo</a>) as well as 5 routes that supply data , including: </p>
+		<p>( <a href="/students">All Students</a>, <a id="StudentsByCourse"> Students by Course<a>, <a id="StudentByStudentNumber" >A Single Student By Student Number<a>, <a href="/TAs">All TAs</a> and <a href="/courses">All Courses</a> )</p>
+		<p></p>
+		<h1>HTML5</h1>
+		<p>This site utilizes HTML5: a markup language used for structuring and presenting content on the World Wide Web</p>
+		<div class="container">
+			<div class="row">
+				<main class="col-md-12">
+
+
+
+					<!-- Start your code here -->
+					
+					
+					
+					<!-- End your code here  -->
+
+
+
+				</main>
+			</div>
+		</div>
+<div>
+	<h3>3rd Largest Title</h3>
+    <p>paragram containing a link to <a href="https://www.youtube.com/">youtube</a></p>
+
+	<table>
+		<caption>Alien football stars</caption>
+		<tr>
+			<th scope="col">Heading A</th>
+			<th colspan="2">Heading B</th>
+			
+		</tr>
+		
+		<tr>
+			<td>Film</td>
+			<td><a href="index.html">
+				<img src="https://www.fillmurray.com/90/190" alt="DON'T FORGET THIS">
+			</a></td>
+			<td>6,219</td>
+		</tr>
+		<tr>
+			
+			<td>Steve </td>
+			<td>6,219</td>
+			<td>6,219</td>
+		</tr>
+	</table>
+	
+
+
+
+</div>
+		
+		<script>function studentsByCourse(){document.getElementById("StudentsByCourse").href = "/students?course="+(Math.floor(Math.random() * 11)+1);}studentsByCourse();</script>
+		<script>function studentByStudentNumber(){document.getElementById("StudentByStudentNumber").href = "/student/"+(Math.floor(Math.random() * 260)+1);}studentByStudentNumber();</script>
+	</body>
+</html>
