@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+</head>
+<div class="row">
+    <div class="col-md-12">
+          <br>
+          <h2>Courses</h2>
+          <hr />
+
+          <p>TODO: render a list of courses here</p>
+
+    </div>
+</div>
+
+<body>
+    {{>welcome}}
+    <h1>Courses Information</h1>
+    CourseCode: {{ data.CourseCode }}
+    CourseDescription: {{ data.CourseDescription }}
+    
+
+    
+</body>
+<div class="row">
+    <main class="col-md-12">
+        <br>
+        <h2>{{Course.CourseCode}} {{Course.CourseDescription}} - course: {{Course.CourseId}}</h2>
+        <hr />
+
+        <form method="post" action="/Courses/update">
+            <input type="hidden" name="Coursecode" value="{{Course.Coursecode}}" />
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>CourseCode:</label>
+                            <input class="form-control" name="CourseId" type="text" value="{{Course.CourseID}}" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>CourseDescription:</label>
+                            <input class="form-control" name="CourseDescription" type="text" value="{{Course.CourseDescription}}" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <hr />
+
+            <input type="submit" class="btn btn-primary float-right" value="Add Course" /><br /><br /><br />
+        </form>
+    </main>
+</div>
+
+</html>

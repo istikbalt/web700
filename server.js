@@ -1,5 +1,5 @@
 /********************************************************************************* 
-* WEB700 � Assignment 04 
+* WEB700 � Assignment 06 
 * I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part 
 * of this assignment has been copied manually or electronically from any other source 
 * (including 3rd party web sites) or distributed to other students. 
@@ -7,7 +7,7 @@
 * Name: ________ISTIKBAL TURUT______________ Student ID: __144392198____________ Date: _____2022-11-02___________ 
 * 
 ********************************************************************************/
-const assignmentData = require('./modules/collegeData.js');
+const assignmentData = require('./modules/collegeData1.js');
 	var HTTP_PORT = process.env.PORT || 8081;
 	const express = require("express");
 	const bodyParser = require("body-parser");
